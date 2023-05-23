@@ -309,106 +309,134 @@
             <!--Header End-->
         </div>
         <!--Full width header End-->
+     
+        <div id="rs-crypto" class="rs-services style4 pt-95 pb-100 md-pt-65 md-pb-70">
+            <div class="container">
+                <div class="sec-title text-center mb-60 md-mb-40">
+                    <span class="sub-text small">Crypto </span>
+                    <h2 class="title title3">E-Currency</h2>                           
+                </div>
 
-        <div class="rs-services style4 pt-95 pb-100 md-pt-65 md-pb-70">
-            <div class="container ">
-                <h4 class="text-center">Verification</h4>
-                <h6>Buying Verification</h6>
-                For new customers you will be allowed to buy between $20 - $100. First 3 transaction and every transaction must be 24hrs apart.<br><br>
-                If you’re buying above $100, then you will be required to provide us with a video holding your ID card/Drivers License/ International Passport. This video must show clearly your face and ID card, telling us your name and that you wish to trade with JGoldServices using your bank carrying the name on the ID card.
+                <div id="crypto">
+                    <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6" v-for="crypto in cryptos" :key="crypto">
+                        <div class="services-item"  >
+                            <div class="services-icon">
+                                <img class="dance_hover" :src="crypto.logo" alt="Services">
+                            </div>
+                            <div class="services-content">
+                                <h3 class="title"><a href="services-style1.html">{{crypto.currency}}</a></h3>
+                                <div class="row" style="font-weight: 500; font-size: 15.8px;">
+                                <div class="col-sm-6 col-lg-6">
+                                    Buy: <span v-if="crypto.buy_active">{{ crypto.buy_rate}} / $</span> <span v-else>0</span>
+                                </div>
+                                <div class="col-sm-6 col-lg-6" style="">
+                                    Sell: <span v-if="crypto.sell_active">{{crypto.sell_rate}} / $</span> <span v-else> 0</span>
+                                </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
            
-                <h6 class="mt-5">Selling Verification</h6>
-                <p> We don’t have any verification process for anyone selling funds to us for now as you’re free to sell any amount from $10 - Unlimited and a swift payment would be made.</p>
             </div>
-         </div>
+
+            <div class="btn-part mt-50 text-center">
+                <a class="readon consultant discover" href="https://api.whatsapp.com/send?phone=2348142940791&text=I%20want%20to%20trade">Trade E-Currency</a>
+            </div>
+            </div>
+        </div>
+        <!-- Services Section End -->
+
+         
             
         </div> 
         <!-- Main content End -->
 
         <!-- Footer Start -->
     
-        <!-- Footer Start -->
-        <footer id="rs-footer" class="rs-footer style1 footer-home3-style">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
-                            <div class="footer-logo mb-40">
-                                <a href="index.html"><img src="./jgold-1.jpeg" alt=""></a>
+            <!-- Footer Start -->
+            <footer id="rs-footer" class="rs-footer style1 footer-home3-style">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
+                                <div class="footer-logo mb-40">
+                                    <a href="index.html"><img src="./jgold-1.jpeg" alt=""></a>
+                                </div>
+                                  <div class="textwidget white-color pb-40"><p>JGold Global Services is your one stop plug for giftcard, Digital Currency and Crypto, offering swift payment when you trades.</p>
+                                  </div>
+                                  <ul class="footer-social md-mb-30">  
+                                    <li> 
+                                        <a href="https://facebook.com/jgoldservices" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
+                                    </li>
+                                    <li> 
+                                        <a href="https://twitter.com/jgoldservices " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
+                                    </li>
+    
+                                    <li> 
+                                        <a href="https://instagram.com/jgoldservices" target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
+                                    </li>
+                                                                               
+                                  </ul>
                             </div>
-                              <div class="textwidget white-color pb-40"><p>JGold Global Services is your one stop plug for giftcard, Digital Currency and Crypto, offering swift payment when you trades.</p>
-                              </div>
-                              <ul class="footer-social md-mb-30">  
-                                <li> 
-                                    <a href="https://facebook.com/jgoldservices" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
-                                </li>
-                                <li> 
-                                    <a href="https://twitter.com/jgoldservices " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
-                                </li>
-
-                                <li> 
-                                    <a href="https://instagram.com/jgoldservices" target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
-                                </li>
-                                                                           
-                              </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
-                            <h3 class="footer-title">Quick Links</h3>
-                            <ul class="site-map">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="index.html#rs-abt-us">About</a> </li>
-                                <li><a href="index.html#rs-faq"> FAQ</a> </li>    
-                                <li><a href="verification.htm">Verification</a></li>
-                                <li><a href="privacy.htm">Privacy</a></li>
-                                <li><a href="index.html#rs-contact">Contact</a> </li>
-                              
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
-                            <h3 class="footer-title">Contact Info</h3>
-                            <ul class="address-widget">
-                                <li>
-                                    <i class="flaticon-location"></i>
-                                    <div class="desc">Jouslaw Global Resource Juntion, Orimerunmu Road, Olowotedo, Ibafo,  Along Lagos-Ibadan Expressway.</div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-call"></i>
-                                    <div class="desc">
-                                       <a href="#">(+234) 814-2940-791</a><br>
-                                       <a href="#">(+234) 7054322639</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-email"></i>
-                                    <div class="desc">
-                                        <a href="#">info@jgoldservices.com</a>
-                                    </div>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                   
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">                    
-                    <div class="row y-middle">
-                        <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
-                            <ul class="copy-right-menu">
-                              
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="copyright text-lg-start text-center ">
-                                <p>© 2023 JGold Services - All Rights Reserved.</p>
+                            <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
+                                <h3 class="footer-title">Quick Links</h3>
+                                <ul class="site-map">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index.html#rs-abt-us">About</a> </li>
+                                    <li><a href="index.html#rs-faq"> FAQ</a> </li>    
+                                    <li><a href="verification.htm">Verification</a></li>
+                                    <li><a href="privacy.htm">Privacy</a></li>
+                                    <li><a href="index.html#rs-contact">Contact</a> </li>
+                                  
+                                </ul>
                             </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
+                                <h3 class="footer-title">Contact Info</h3>
+                                <ul class="address-widget">
+                                    <li>
+                                        <i class="flaticon-location"></i>
+                                        <div class="desc">Jouslaw Global Resource Juntion, Orimerunmu Road, Olowotedo, Ibafo,  Along Lagos-Ibadan Expressway.</div>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-call"></i>
+                                        <div class="desc">
+                                           <a href="#">(+234) 814-2940-791</a><br>
+                                           <a href="#">(+234) 7054322639</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-email"></i>
+                                        <div class="desc">
+                                            <a href="#">info@jgoldservices.com</a>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                       
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!-- Footer End -->
+                <div class="footer-bottom">
+                    <div class="container">                    
+                        <div class="row y-middle">
+                            <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
+                                <ul class="copy-right-menu">
+                                  
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="copyright text-lg-start text-center ">
+                                    <p>© 2023 JGold Services - All Rights Reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
 
         <!-- start scrollUp  -->
         <div id="scrollUp" class="blue-color">

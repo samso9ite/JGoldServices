@@ -310,23 +310,44 @@
         </div>
         <!--Full width header End-->
 
-        <div class="rs-services style4 pt-95 pb-100 md-pt-65 md-pb-70">
-            <div class="container ">
-                <h4 class="text-center">Verification</h4>
-                <h6>Buying Verification</h6>
-                For new customers you will be allowed to buy between $20 - $100. First 3 transaction and every transaction must be 24hrs apart.<br><br>
-                If you’re buying above $100, then you will be required to provide us with a video holding your ID card/Drivers License/ International Passport. This video must show clearly your face and ID card, telling us your name and that you wish to trade with JGoldServices using your bank carrying the name on the ID card.
-           
-                <h6 class="mt-5">Selling Verification</h6>
-                <p> We don’t have any verification process for anyone selling funds to us for now as you’re free to sell any amount from $10 - Unlimited and a swift payment would be made.</p>
+
+               <!-- Testimonial Section Start -->
+               <div class="rs-testimonial style4  pt-95 pb-100 md-pt-65 md-pb-70" style="background-color:#66be2c">
+                <div class="container">
+                    <div class="sec-title text-center mb-60 md-mb-40">
+                        <span class="sub-text small white-color">Testimonials</span>
+                        <h2 class="title title3 white-color">Customers Reviews</h2>                           
+                    </div>
+                   
+                    <div class="">
+                        <div id="testimonials_data" class="col-lg-12">
+                              
+                            <div class="row">
+                                
+                            <div class="testi-item col-lg-4" v-for="testimony in testimonials" :key="testimony">
+                                <div class="testi-wrap mb-3">
+                                    <div class="item-contents">
+                                        <p>{{testimony.testimony}}</p>
+                                    </div>
+                                    <div class="testi-information">
+                                        <div class="testi-name">{{testimony.name}}</div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </span>
+                     
+                    </div>
+                </div>
+                </div>
             </div>
-         </div>
-            
+            <!-- Testimonial Section End -->
+
+ 
         </div> 
         <!-- Main content End -->
 
-        <!-- Footer Start -->
-    
         <!-- Footer Start -->
         <footer id="rs-footer" class="rs-footer style1 footer-home3-style">
             <div class="footer-top">
@@ -429,6 +450,7 @@
        <!-- Nivo slider js -->
         <script src="assets/inc/custom-slider/js/jquery.nivo.slider.js"></script>
         <!-- pointer js -->
+          <script src="assets/js/wow.min.js"></script>
       
         <!-- main js -->
         <script src="assets/js/main.js"></script>

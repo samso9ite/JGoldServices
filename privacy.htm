@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx"> 
-    
-<!-- Mirrored from reactheme.com/products/html/bizup/onepage3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Apr 2023 16:11:42 GMT -->
-<head>
+  <head>
         <!-- meta tag -->
         <meta charset="utf-8">
         <title>Jouslaw Global Services</title>
@@ -12,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- favicon -->
         <link rel="apple-touch-icon" href="apple-touch-icon.html">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+        <link rel="shortcut icon" type="image/x-icon" href="./jgold-1.jpeg">
         <!-- Bootstrap v4.4.1 css -->
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
         <!-- font-awesome css -->
@@ -26,7 +24,6 @@
         <!-- off canvas css -->
         <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css">
         <!-- magnific popup css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
         <!-- Main Menu css -->
         <link rel="stylesheet" href="assets/css/rsmenu-main.css">
         <!-- nivo slider CSS -->
@@ -38,20 +35,27 @@
         <link rel="stylesheet" type="text/css" href="style.css"> <!-- This stylesheet dynamically changed from style.less -->
         <!-- responsive css -->
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        
         
     </head>
     <body class="home-blue-color">
         
         <div class="offwrap"></div>
-
+        <div style="position: fixed; bottom:10px; left:20px; z-index: 99"> 
+            <a href="https://api.whatsapp.com/send?phone=2348142940791&amp;text=I%20want%20to%20trade" style="height: 50px;" target="_blank" class="btn btn-success" title="Chat Us On WhatsApp">
+            			  <marquee behavior="alternate" style="width: 120px" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()">WhatsApp <i class="fa fa-whatsapp"></i></marquee>
+            			</a>
+            		</div>
         <!--Preloader start here-->
-        <div id="pre-load">
+        <!-- <div id="pre-load">
            <div id="loader" class="loader">
                <div class="loader-container">
                    <div class='loader-icon'><img src="assets/images/fav.png" alt="Bizup Consulting Business"></div>
                </div>
            </div>              
-       </div>
+       </div> -->
         <!--Preloader area end here-->
      
 		<!-- Main content Start -->
@@ -70,15 +74,15 @@
                                 <div class="header-logo">
                                     <div class="logo-area">
                                         <a href="index.html">
-                                            <img class="normal-logo" src="assets/images/logo-dark2.png" alt="logo">  
-                                            <img class="sticky-logo" src="assets/images/logo-dark.png" alt="logo">
+                                            <img class="normal-logo" src="./jgold-1.jpeg" alt="logo">  
+                                            <img class="sticky-logo" src="./jgold-1.jpeg" alt="logo">
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-cell">
                                 <div class="header-quote">
-                                    <ul class="rs-address-area">
+                                    <ul class="rs-address-area">    
                                         <li class="address-list">
                                             <div class="info-icon">
                                                 <i class="flaticon-location"></i>
@@ -103,7 +107,7 @@
                                             </div>
                                             <div class="info-content">
                                                 <div class="info-title"><a href="#">Call us</a></div>
-                                                <div class="info-des"><a href="tel:(+234) 8142940791">+234 8142940791</a></div>
+                                                <div class="info-des"><a href="tel:(+234) 8142940791">+234 7054322639</a></div>
                                             </div>
                                         </li>
                                     </ul>
@@ -121,7 +125,7 @@
                             <div class="col-cell header-logo">                                  
                                 <div class="logo-area">
                                     <a href="index.html">
-                                        <img src="assets/images/logo-dark.png" alt="logo">  
+                                        <img src="./jgold-1.jpeg" alt="logo">  
                                     </a>
                                 </div>
                             </div>
@@ -130,12 +134,13 @@
                                     <div class="main-menu">
                                         <nav class="rs-menu hidden-md">
                                             <ul class="nav-menu">
-                                                <li><a href="#rs-header">Home</a></li>
-                                                <li><a href="#rs-about">Gift Card / Crypto </a> </li>
-                                                <li><a href="#rs-services"> FAQ</a> </li>
-                                                <li><a href="#rs-project">How to Trade</a> </li>
-                                                <li><a href="#rs-blog">About</a> </li>
-                                                <li><a href="#rs-contact">Contact</a> </li>
+                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="index.html#rs-crypto">E-Currency </a> </li>
+                                                <li><a href="index.html#rs-services">Gift Card </a> </li>
+                                                <li><a href="index.html#rs-faq">How to Trade</a> </li>
+                                                <li><a href="index.html#rs-blog">News</a> </li>
+                                                <!-- <li><a href="#rs-abt-us">About</a> </li>
+                                                <li><a href="#rs-contact">Contact</a> </li> -->
                                             </ul> <!-- //.nav-menu -->
                                         </nav>
                                     </div> <!-- //.main-menu -->
@@ -167,9 +172,16 @@
                                     </ul>
                                     <div class="toolbar-sl-share">
                                         <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li> 
+                                                <a href="https://facebook.com/jgoldservices" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
+                                            </li>
+                                            <li> 
+                                                <a href="https://twitter.com/jgoldservices " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
+                                            </li>
+          
+                                            <li> 
+                                                <a href="https://instagram.com/jgoldservices" target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -189,7 +201,7 @@
                         </a>
                     </div>
                     <div class="canvas-logo">
-                        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                        <a href="index.html"><img src="./jgold-1.jpeg" alt="logo"></a>
                     </div>
                     <div class="offcanvas-text">
                         <p>We denounce with righteous indig nation in and dislike men who are so beguiled and to demo realized, that they data forest see best business consulting wordpress theme 2021.</p>
@@ -228,9 +240,16 @@
                             </div>
                         </div>
                         <ul class="social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                            <li> 
+                                <a href="https://facebook.com/jgoldservices" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
+                            </li>
+                            <li> 
+                                <a href="https://twitter.com/jgoldservices " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
+                            </li>
+
+                            <li> 
+                                <a href="https://instagram.com/jgoldservices" target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -247,12 +266,11 @@
                         </a>
                     </div>
                     <ul class="nav-menu onepage-menu onpage-ul">
-                        <li><a href="#rs-header">Home</a></li>
-                        <li><a href="#rs-about">Gift Card / Crypto </a> </li>
-                        <li><a href="#rs-services"> FAQ</a> </li>
-                        <li><a href="#rs-project">How to Trade</a> </li>
-                        <li><a href="#rs-blog">About</a> </li>
-                        <li><a href="#rs-contact">Contact</a> </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#rs-crypto">E-Currency </a> </li>
+                        <li><a href="index.html#rs-services">Gift Card </a> </li>
+                        <li><a href="index.html#rs-project">How to Trade</a> </li>
+                        <li><a href="index.html#rs-blog">News</a> </li>
                     </ul> <!-- //.nav-menu -->
                     <div class="canvas-contact">
                           <div class="address-area">
@@ -279,6 +297,7 @@
                                       <i class="flaticon-call"></i>
                                   </div>
                                   <div class="info-content">
+                                      <h4 class="title">Phone</h4>
                                       <em>+234 8142940791</em>
                                   </div>
                               </div>
@@ -290,6 +309,8 @@
             <!--Header End-->
         </div>
         <!--Full width header End-->
+
+
         <div class="rs-services style4 pt-95 pb-100 md-pt-65 md-pb-70">
             <div class="container ">
                 <h4 class="text-center">Privacy</h4>
@@ -302,88 +323,89 @@
         </div> 
         <!-- Main content End -->
 
-        <!-- Footer Start -->
-        <footer id="rs-footer" class="rs-footer style1 footer-home3-style">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
-                            <div class="footer-logo mb-40">
-                                <a href="index.html"><img src="assets/images/logo-lite.png" alt=""></a>
+      
+       <!-- Footer Start -->
+            <footer id="rs-footer" class="rs-footer style1 footer-home3-style">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
+                                <div class="footer-logo mb-40">
+                                    <a href="index.html"><img src="./jgold-1.jpeg" alt=""></a>
+                                </div>
+                                  <div class="textwidget white-color pb-40"><p>JGold Global Services is your one stop plug for giftcard, Digital Currency and Crypto, offering swift payment when you trades.</p>
+                                  </div>
+                                  <ul class="footer-social md-mb-30">  
+                                    <li> 
+                                        <a href="https://facebook.com/jgoldservices" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
+                                    </li>
+                                    <li> 
+                                        <a href="https://twitter.com/jgoldservices " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
+                                    </li>
+    
+                                    <li> 
+                                        <a href="https://instagram.com/jgoldservices" target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
+                                    </li>
+                                                                               
+                                  </ul>
                             </div>
-                              <div class="textwidget white-color pb-40"><p>We denounce with righteous indig nation in and dislike men who are so beguiled and to demo realized by the, so blinded by desire, that they cannot foresee.</p>
-                              </div>
-                              <ul class="footer-social md-mb-30">  
-                                  <li> 
-                                      <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a> 
-                                  </li>
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a> 
-                                  </li>
-
-                                  <li> 
-                                      <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a> 
-                                  </li>
-                                                                           
-                              </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
-                            <h3 class="footer-title">Quick Links</h3>
-                            <ul class="site-map">
-                                <li><a href="tax-strategy.html">Home</a></li>
-                                <li><a href="tax-strategy.html">How To Trade</a></li>
-                                <li><a href="business-planning.html">Verification</a></li>
-                                <li><a href="financial-advices.html">Privacy</a></li>
-                              
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
-                            <h3 class="footer-title">Contact Info</h3>
-                            <ul class="address-widget">
-                                <li>
-                                    <i class="flaticon-location"></i>
-                                    <div class="desc">Jouslaw Global Resource Juntion, Orimerunmu Road, Olowotedo, Ibafo,  Along Lagos-Ibadan Expressway.</div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-call"></i>
-                                    <div class="desc">
-                                       <a href="#">(+234) 814-2940-791</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="flaticon-email"></i>
-                                    <div class="desc">
-                                        <a href="#">info@jgoldservices.com</a>
-                                    </div>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                   
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">                    
-                    <div class="row y-middle">
-                        <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
-                            <ul class="copy-right-menu">
-                                <!-- <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="faqs.html">Faqs</a></li>
-                                <li><a href="contact.html">Contact</a></li> -->
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="copyright text-lg-start text-center ">
-                                <p>© 2023 JGold Services - All Rights Reserved.</p>
+                            <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
+                                <h3 class="footer-title">Quick Links</h3>
+                                <ul class="site-map">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index.html#rs-abt-us">About</a> </li>
+                                    <li><a href="index.html#rs-faq"> FAQ</a> </li>    
+                                    <li><a href="verification.htm">Verification</a></li>
+                                    <li><a href="privacy.htm">Privacy</a></li>
+                                    <li><a href="index.html#rs-contact">Contact</a> </li>
+                                  
+                                </ul>
                             </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 md-mb-10">
+                                <h3 class="footer-title">Contact Info</h3>
+                                <ul class="address-widget">
+                                    <li>
+                                        <i class="flaticon-location"></i>
+                                        <div class="desc">Jouslaw Global Resource Juntion, Orimerunmu Road, Olowotedo, Ibafo,  Along Lagos-Ibadan Expressway.</div>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-call"></i>
+                                        <div class="desc">
+                                           <a href="#">(+234) 814-2940-791</a><br>
+                                           <a href="#">(+234) 7054322639</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-email"></i>
+                                        <div class="desc">
+                                            <a href="#">info@jgoldservices.com</a>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                       
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-        <!-- Footer End -->
+                <div class="footer-bottom">
+                    <div class="container">                    
+                        <div class="row y-middle">
+                            <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
+                                <ul class="copy-right-menu">
+                                  
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="copyright text-lg-start text-center ">
+                                    <p>© 2023 JGold Services - All Rights Reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
 
         <!-- start scrollUp  -->
         <div id="scrollUp" class="blue-color">
@@ -391,61 +413,24 @@
         </div>
         <!-- End scrollUp  -->
 
-        <!-- Search Modal Start -->
-        <div class="modal fade search-modal" id="searchModal" tabindex="-1">
-            <button type="button" class="close" data-bs-dismiss="modal">
-                <span class="flaticon-cross"></span>
-            </button>
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="search-block clearfix">
-                        <form>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Search Here..." type="text">
-                                <button type="submit" value="Search"><i class="flaticon-search"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <!-- Search Modal End -->
     
-        
-        <!-- modernizr js -->
-        <script src="assets/js/modernizr-2.8.3.min.js"></script>
-        <!-- jquery latest version -->
-        <script src="assets/js/jquery.min.js"></script>
+        <script src="data.js"></script>
+       <script src="assets/js/jquery.min.js"></script>
         <!-- Bootstrap v4.4.1 js -->
         <script src="assets/js/bootstrap.min.js"></script>
         <!-- op nav js -->
         <script src="assets/js/jquery.nav.js"></script>
-        <!-- isotope.pkgd.min js -->
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <!-- owl.carousel js -->
         <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- wow js -->
-        <script src="assets/js/wow.min.js"></script>
-        <!-- Skill bar js -->
-        <script src="assets/js/skill.bars.jquery.js"></script>
-        <!-- imagesloaded js -->
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-         <!-- waypoints.min js -->
-        <script src="assets/js/waypoints.min.js"></script>
-        <!-- counterup.min js -->
-        <script src="assets/js/jquery.counterup.min.js"></script> 
-        <!-- magnific popup js -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- Nivo slider js -->
+       <!-- Nivo slider js -->
         <script src="assets/inc/custom-slider/js/jquery.nivo.slider.js"></script>
         <!-- pointer js -->
-        <script src="assets/js/pointer.html"></script>
-        <!-- contact form js -->
-        <script src="assets/js/contact.form.js"></script>
+      
         <!-- main js -->
         <script src="assets/js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     </body>
 
-<!-- Mirrored from reactheme.com/products/html/bizup/onepage3.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Apr 2023 16:13:14 GMT -->
 </html>

@@ -30,7 +30,7 @@ body {
 }
 img {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 p {
   margin: 0 0 26px;
@@ -1895,7 +1895,7 @@ blockquote cite:before {
   height: 5px;
   width: 5px;
   display: block;
-  background: #a08543;
+  background: #fff;
   border-radius: 50%;
   transition: none;
   list-style: none;
@@ -1909,7 +1909,7 @@ blockquote cite:before {
 .full-width-header .rs-header .expand-btn-inner ul .humburger .nav-expander .bar span.dot6,
 .full-width-header .rs-header .expand-btn-inner ul .humburger .nav-expander .bar span.dot7,
 .full-width-header .rs-header .expand-btn-inner ul .humburger .nav-expander .bar span.dot8 {
-  background: #a08543;
+  background: #fff;
 }
 .full-width-header .rs-header.header-transparent {
   position: absolute;
